@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0d131482-afde-4e97-9a66-f17a700026a0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bank_app/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/config/AuthManagerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/config/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/controller/CardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/controller/TransferController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/dto/AuthRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/dto/AuthResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/dto/CardDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/dto/NewCardDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/dto/RegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/dto/TransferDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/dto/UpdateUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/dto/UserCardDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/entity/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/entity/enums/CardStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/entity/enums/Roles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/exception/BankRestExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/exception/ConcurrentException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/exception/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/exception/ServiceAuthenticationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/exception/WrongOperationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/mapper/CardMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/repository/CardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/security/BankRestUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/security/CardSecurity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/security/JwtAuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/security/UserSecurity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/service/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/service/CardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/service/CardServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/service/TransferService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/service/TransferServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/util/CardEncryptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/util/Encryptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/util/JwtTokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/util/OpenApiExporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/resources/db/migration/db.changelog-master.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/main/resources/db/migration/db.changelog-schema.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/test/java/org/example/bank_app/controller/AuthControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/test/java/org/example/bank_app/controller/CardControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/test/java/org/example/bank_app/controller/TransferControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/test/java/org/example/bank_app/controller/UserControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/test/java/org/example/bank_app/service/AuthServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/test/java/org/example/bank_app/service/CardServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/test/java/org/example/bank_app/service/TransferServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/test/java/org/example/bank_app/service/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank_app/src/test/resources/application-test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/README_Docs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/openapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/openapi.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/config/README_Config.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/controller/README_Controller.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/dto/README_Dto.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/entity/README_Entity.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/exception/README_Exception.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/repository/README_Repository.md" beforeDir="false" afterPath="$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/repository/README_Repository.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/security/README_Security.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/service/README_Service.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/util/README_Util.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/README_Resources.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/README_Migration.md" beforeDir="false" afterPath="$PROJECT_DIR$/bank_app/src/main/resources/db/migration/README_Migration.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/bankcards/README_Bankcards.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/bankcards/controller/README_Controller.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/bankcards/service/README_Service.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/bank_app">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bank_app" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Exception" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GordeevGleb&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:PaatoM/Bank_REST.git&quot;,
+    &quot;accountId&quot;: &quot;71a16311-3627-4a9b-84c1-037b57e7ad64&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2y1cxUjISpGmmkuzCABkYzYXpL0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.docker-compose.yml.bank_app: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.bank_db: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.postgres: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Build bank_app.executor": "Run",
+    "JUnit.AbstractIntegrationTest.executor": "Run",
+    "JUnit.AuthControllerIntegrationTest.executor": "Run",
+    "JUnit.AuthControllerIntegrationTest.login_shouldReturnToken_forValidCredentials.executor": "Run",
+    "JUnit.AuthControllerIntegrationTest.shouldReturnBadRequestWhenUserDoesNotExist.executor": "Run",
+    "JUnit.AuthControllerTest.executor": "Run",
+    "JUnit.AuthControllerTest.login_InvalidCredentials_ReturnsUnauthorized.executor": "Run",
+    "JUnit.AuthControllerTest.login_ReturnsAuthResponse.executor": "Run",
+    "JUnit.AuthControllerTest.login_success.executor": "Run",
+    "JUnit.AuthControllerTest.register_ExistingUser_ReturnsConflict.executor": "Run",
+    "JUnit.AuthControllerTest.register_ReturnsAuthResponse.executor": "Run",
+    "JUnit.AuthServiceTest.executor": "Run",
+    "JUnit.AuthServiceTest.login_invalidCredentials_shouldThrowBadCredentialsException.executor": "Run",
+    "JUnit.AuthServiceTest.login_success.executor": "Run",
+    "JUnit.AuthServiceTest.register_existingUser_shouldThrowConcurrentException.executor": "Run",
+    "JUnit.AuthServiceTest.register_newUser_shouldReturnAuthResponseWithToken.executor": "Run",
+    "JUnit.AuthServiceTest.register_userRepositoryThrowsException_shouldPropagate.executor": "Run",
+    "JUnit.CardControllerTest.create_InvalidHolderId_ReturnsBadRequest.executor": "Run",
+    "JUnit.CardControllerTest.create_ValidInput_ReturnsCreatedCard.executor": "Run",
+    "JUnit.CardControllerTest.delete_InvalidCardId_ReturnsBadRequest.executor": "Run",
+    "JUnit.CardControllerTest.delete_ValidCardId_ReturnsNoContent.executor": "Run",
+    "JUnit.CardControllerTest.executor": "Run",
+    "JUnit.CardControllerTest.getAll_InvalidPageParam_ReturnsBadRequest.executor": "Run",
+    "JUnit.CardControllerTest.getByHolder_Unauthorized_ReturnsUnauthorized.executor": "Run",
+    "JUnit.CardControllerTest.getByHolder_ValidRequest_ReturnsUserCards.executor": "Run",
+    "JUnit.CardControllerTest.updateStatus_InvalidCardId_ReturnsBadRequest.executor": "Run",
+    "JUnit.CardControllerTest.updateStatus_MissingStatus_ReturnsBadRequest.executor": "Run",
+    "JUnit.CardControllerTest.updateStatus_ValidStatus_ReturnsUpdatedCard.executor": "Run",
+    "JUnit.CardServiceTest.create_validUser_shouldCreateCard.executor": "Run",
+    "JUnit.CardServiceTest.getByHolder_shouldReturnUserCards.executor": "Run",
+    "JUnit.CardServiceTest.getByHolder_userNotFound_shouldThrow.executor": "Run",
+    "JUnit.CardServiceTest.updateStatus_adminOrBlock_shouldUpdate.executor": "Run",
+    "JUnit.TestContainerConfig.executor": "Run",
+    "JUnit.TransferControllerTest.executor": "Run",
+    "JUnit.TransferControllerTest.transfer_Unauthenticated_ReturnsUnauthorized.executor": "Run",
+    "JUnit.TransferControllerTest.transfer_ValidRequest_ReturnsTransferDto.executor": "Run",
+    "JUnit.TransferServiceTest.executor": "Run",
+    "JUnit.TransferServiceTest.transfer_fromCardNotFound_shouldThrowIllegalArgumentException.executor": "Run",
+    "JUnit.TransferServiceTest.transfer_senderCardNotFound_throwsIllegalArgumentException.executor": "Run",
+    "JUnit.TransferServiceTest.transfer_senderCardNotFound_throwsNotFoundException.executor": "Run",
+    "JUnit.TransferServiceTest.transfer_successfulTransfer.executor": "Run",
+    "JUnit.TransferServiceTest.transfer_userNotFound_shouldThrowNotFoundException.executor": "Run",
+    "JUnit.TransferServiceTest.transfer_validData_shouldTransferMoney.executor": "Run",
+    "JUnit.UserControllerTest.deleteUser_ForbiddenForNonAdmin.executor": "Run",
+    "JUnit.UserControllerTest.deleteUser_WithValidId_ReturnsNoContent.executor": "Run",
+    "JUnit.UserControllerTest.executor": "Run",
+    "JUnit.UserControllerTest.updateUser_ForbiddenForNonAdmin.executor": "Run",
+    "JUnit.UserControllerTest.updateUser_WithValidData_ReturnsUpdatedUser.executor": "Run",
+    "JUnit.UserRepositoryIntegrationTest.testSaveUser.executor": "Run",
+    "JUnit.UserRepositoryTest.shouldLoadAdminUserFromTestData.executor": "Run",
+    "JUnit.UserServiceIntegrationTest.executor": "Run",
+    "JUnit.UserServiceIntegrationTest.testFindByLogin_Success.executor": "Run",
+    "JUnit.UserServiceTest.delete_existingUser_shouldDeleteUser.executor": "Run",
+    "JUnit.UserServiceTest.executor": "Run",
+    "JUnit.UserServiceTest.findById_userNotFound_shouldThrowNotFoundException.executor": "Run",
+    "JUnit.UserServiceTest.update_userNotFound_shouldThrowNotFoundException.executor": "Run",
+    "Maven.Bank_REST [clean].executor": "Run",
+    "Maven.Bank_REST [compile].executor": "Run",
+    "Maven.Bank_REST [install].executor": "Run",
+    "Maven.Bank_REST [package].executor": "Run",
+    "Maven.Bank_REST [test].executor": "Run",
+    "Maven.Bank_REST [validate].executor": "Run",
+    "Maven.bank_app [clean].executor": "Run",
+    "Maven.bank_app [compile].executor": "Run",
+    "Maven.bank_app [install].executor": "Run",
+    "Maven.bank_app [package].executor": "Run",
+    "Maven.bank_app [test].executor": "Run",
+    "Maven.bank_app [validate].executor": "Run",
+    "OpenAPI/Swagger Code Generator.openapi.yaml.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.BankAppApplication (1).executor": "Run",
+    "Spring Boot.BankRestApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/home/gordeevgleb/IdeaProjects/Bank_REST/src/main/java/com/example/bankcards",
+    "last_opened_file_path": "/home/gordeevgleb/IdeaProjects/Bank_REST",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bank_app/src/test/resources/db/migration" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bank_app/src/main/resources/db/migration" />
+      <recent name="$PROJECT_DIR$/bank_app/src/test/resources/db/migration" />
+      <recent name="$PROJECT_DIR$/bank_app/src/main/resources" />
+      <recent name="$PROJECT_DIR$/bank_app/src/main/resources/db" />
+      <recent name="$PROJECT_DIR$/bank_app" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.bankcards.controller" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="OpenAPI/Swagger Code Generator.openapi.yaml">
+    <configuration name="CardControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bank_app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.bank_app.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.bank_app.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.example.bank_app.controller.CardControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardControllerTest.create_ValidInput_ReturnsCreatedCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bank_app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.bank_app.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.bank_app.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.example.bank_app.controller.CardControllerTest" />
+      <option name="METHOD_NAME" value="create_ValidInput_ReturnsCreatedCard" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardControllerTest.getByHolder_ValidRequest_ReturnsUserCards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bank_app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.bank_app.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.bank_app.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.example.bank_app.controller.CardControllerTest" />
+      <option name="METHOD_NAME" value="getByHolder_ValidRequest_ReturnsUserCards" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BankAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="bank_app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.bank_app.BankAppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="bank_app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.bank_app.BankApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankRestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Bank_REST" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.bankcards.BankRestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="openapi.yaml" type="SwaggerCodegen" editBeforeRun="true" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="customTemplatesPath" value="" />
+      <option name="generateToPath" value="$PROJECT_DIR$/bank_app/src/main/gen" />
+      <option name="generationParameters">
+        <list />
+      </option>
+      <option name="generatorType" value="OPENAPI_GENERATOR_V7" />
+      <option name="jdkPath" value="$APPLICATION_HOME_DIR$/jbr/bin/java" />
+      <option name="language" value="java" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="specificationPath" value="$PROJECT_DIR$/docs/openapi.yaml" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="OpenAPI/Swagger Code Generator.openapi.yaml" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="JUnit.CardControllerTest" />
+        <item itemvalue="JUnit.CardControllerTest.create_ValidInput_ReturnsCreatedCard" />
+        <item itemvalue="JUnit.CardControllerTest.getByHolder_ValidRequest_ReturnsUserCards" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d131482-afde-4e97-9a66-f17a700026a0" name="Changes" comment="" />
+      <created>1749005766346</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749005766346</updated>
+      <workItem from="1749005768262" duration="13403000" />
+      <workItem from="1749027719535" duration="6961000" />
+      <workItem from="1749105207160" duration="26300000" />
+      <workItem from="1749187512350" duration="20571000" />
+      <workItem from="1749273781270" duration="8696000" />
+      <workItem from="1749285271551" duration="19045000" />
+      <workItem from="1749367788930" duration="12247000" />
+      <workItem from="1749449417598" duration="28194000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/bank_app/src/main/java/org/example/bank_app/config/SecurityConfig.java</url>
+          <line>20</line>
+          <properties field="jwtFilter" class="org.example.bank_app.config.SecurityConfig" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/bank_app/src/test/java/org/example/bank_app/service/UserServiceTest.java</url>
+          <line>72</line>
+          <properties class="org.example.bank_app.service.UserServiceTest" method="findById_userNotFound_shouldThrowNotFoundException">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bank_app/src/test/java/org/example/bank_app/controller/AuthControllerTest.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

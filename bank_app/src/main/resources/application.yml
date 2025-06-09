@@ -1,0 +1,30 @@
+
+jwt:
+  secret: vSeDrFyxxs123eZcretGkey1111122222222#gDkjjia
+  expiration: 3600000
+
+encryption:
+  card-secret: vSeDrFyxxs123eZcretGkey1111122222222#gDkjjia
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bank_db
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  liquibase:
+    enabled: true
+    change-log: classpath:/db/migration/db.changelog-master.yml
+
+springdoc:
+  api-docs:
+    path: /api/v3/api-docs
+  swagger-ui:
+    path: /api/swagger-ui
+

@@ -1,0 +1,162 @@
+databaseChangeLog:
+  # Users
+  - changeSet:
+      id: test-data-user-1
+      author: gleb
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column: { name: id, valueNumeric: 1 }
+              - column: { name: login, value: "admin" }
+              - column: { name: password, value: "{noop}adminpass" }
+              - column: { name: name, value: "Admin User" }
+              - column: { name: is_blocked, valueBoolean: false }
+
+  - changeSet:
+      id: test-data-user-2
+      author: gleb
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column: { name: id, valueNumeric: 2 }
+              - column: { name: login, value: "user" }
+              - column: { name: password, value: "{noop}userpass" }
+              - column: { name: name, value: "Active User" }
+              - column: { name: is_blocked, valueBoolean: false }
+
+  - changeSet:
+      id: test-data-user-3
+      author: gleb
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column: { name: id, valueNumeric: 3 }
+              - column: { name: login, value: "blocked" }
+              - column: { name: password, value: "{noop}blockedpass" }
+              - column: { name: name, value: "Blocked User" }
+              - column: { name: is_blocked, valueBoolean: true }
+
+  # Roles
+  - changeSet:
+      id: test-data-role-1
+      author: gleb
+      changes:
+        - insert:
+            tableName: users_roles
+            columns:
+              - column: { name: user_id, valueNumeric: 1 }
+              - column: { name: role, value: "ADMIN" }
+
+  - changeSet:
+      id: test-data-role-2
+      author: gleb
+      changes:
+        - insert:
+            tableName: users_roles
+            columns:
+              - column: { name: user_id, valueNumeric: 1 }
+              - column: { name: role, value: "USER" }
+
+  - changeSet:
+      id: test-data-role-3
+      author: gleb
+      changes:
+        - insert:
+            tableName: users_roles
+            columns:
+              - column: { name: user_id, valueNumeric: 2 }
+              - column: { name: role, value: "USER" }
+
+  - changeSet:
+      id: test-data-role-4
+      author: gleb
+      changes:
+        - insert:
+            tableName: users_roles
+            columns:
+              - column: { name: user_id, valueNumeric: 3 }
+              - column: { name: role, value: "USER" }
+
+  # Cards for user 2 (Active User)
+  - changeSet:
+      id: test-data-card-1
+      author: gleb
+      changes:
+        - insert:
+            tableName: cards
+            columns:
+              - column: { name: number, value: "1111-2222-3333-4444" }
+              - column: { name: user_id, valueNumeric: 2 }
+              - column: { name: expiry_date, valueDate: "2030-01-01" }
+              - column: { name: status, value: "ACTIVE" }
+              - column: { name: balance, valueNumeric: 100.0 }
+
+  - changeSet:
+      id: test-data-card-2
+      author: gleb
+      changes:
+        - insert:
+            tableName: cards
+            columns:
+              - column: { name: number, value: "5555-6666-7777-8888" }
+              - column: { name: user_id, valueNumeric: 2 }
+              - column: { name: expiry_date, valueDate: "2031-01-01" }
+              - column: { name: status, value: "ACTIVE" }
+              - column: { name: balance, valueNumeric: 50.0 }
+
+  - changeSet:
+      id: test-data-card-3
+      author: gleb
+      changes:
+        - insert:
+            tableName: cards
+            columns:
+              - column: { name: number, value: "9999-0000-1111-2222" }
+              - column: { name: user_id, valueNumeric: 2 }
+              - column: { name: expiry_date, valueDate: "2020-01-01" }
+              - column: { name: status, value: "EXPIRED" }
+              - column: { name: balance, valueNumeric: 30.0 }
+
+  # Cards for user 3 (Blocked User)
+  - changeSet:
+      id: test-data-card-4
+      author: gleb
+      changes:
+        - insert:
+            tableName: cards
+            columns:
+              - column: { name: number, value: "4444-3333-2222-1111" }
+              - column: { name: user_id, valueNumeric: 3 }
+              - column: { name: expiry_date, valueDate: "2030-01-01" }
+              - column: { name: status, value: "ACTIVE" }
+              - column: { name: balance, valueNumeric: 75.0 }
+
+  - changeSet:
+      id: test-data-card-5
+      author: gleb
+      changes:
+        - insert:
+            tableName: cards
+            columns:
+              - column: { name: number, value: "8888-7777-6666-5555" }
+              - column: { name: user_id, valueNumeric: 3 }
+              - column: { name: expiry_date, valueDate: "2032-01-01" }
+              - column: { name: status, value: "ACTIVE" }
+              - column: { name: balance, valueNumeric: 120.0 }
+
+  - changeSet:
+      id: test-data-card-6
+      author: gleb
+      changes:
+        - insert:
+            tableName: cards
+            columns:
+              - column: { name: number, value: "2222-1111-0000-9999" }
+              - column: { name: user_id, valueNumeric: 3 }
+              - column: { name: expiry_date, valueDate: "2020-01-01" }
+              - column: { name: status, value: "EXPIRED" }
+              - column: { name: balance, valueNumeric: 10.0 }
+
